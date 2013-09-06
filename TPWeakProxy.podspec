@@ -9,9 +9,9 @@ The primary use case is to break reference cycles.
                    DESC
   s.homepage     = "https://github.com/tetherpad/TPWeakProxy"
   s.license      = 'MIT'
-  s.author       = { "Mark Ferlatte" => "ferlatte@cryptio.net" }
+  s.author       = { "Mark Ferlatte" => "mark@tetherpad.com" }
   s.source       = { 
-    :git => "git://github.com/tetherpad/TPWeakProxy.git", 
+    :git => "git@github.com:tetherpad/TPWeakProxy.git", 
     :tag => "1.0.0"
   }
   s.source_files = 'TPWeakProxy.{h,m}'
