@@ -69,8 +69,8 @@ target has a strong reference to the NSTimer (via the myTimer
 property). Now we have a reference loop, and therefor we have a memory leak.
 
 We can start to fix that pretty easily; the NSTimer is strongly referenced by
-the NSRunLoop that it's scheduled to run on, so we can change our
-reference to it to be weak:
+the NSRunLoop object it's associated with, so the UIViewController which created it 
+can change its reference to be weak:
 
     @property (weak, non-atomic) NSTimer *myTimer;
     
