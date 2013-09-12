@@ -35,7 +35,7 @@ Easiest way: use Cocoapods. Otherwise, copy the .h and .m into your project.
     
 ## Motivation
 
-TPWeakProxy solves the problem of reference loops. This can happen when an object you instantiate keeps a strong reference to the object by which it was instantiated - making it impossible for the first object to die while the second object continues to exist.
+TPWeakProxy solves the problem of object reference loops in Objective C. Reference loops can occur when an instantiated object keeps a strong reference to the object by which it was instantiated - making it impossible for the first object to be deallocated while the second object continues to exist.
 
 An example of where this can be a problem is with the fairly common pattern in iOS development of using NSTimers. 
 
