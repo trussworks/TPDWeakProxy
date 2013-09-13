@@ -97,3 +97,7 @@ time soon. So we fix it with TPWeakProxy, like so:
 Now, the NSTimer won't prevent the UIViewController from being
 dealloc'd when it's popped off the stack, and the dealloc() will now
 invalidate the timer correctly.
+
+## License
+
+TPWeakProxy is available under the MIT license. See the LICENSE file for more info.
