@@ -11,7 +11,7 @@ The primary use case is to break reference cycles.
   s.license      = 'MIT'
   s.authors      = { "Mark Ferlatte" => "mark@tetherpad.com", "Jen Leech" => "jen@tetherpad.com" }
   s.source       = { 
-    :git => "git@github.com:tetherpad/TPWeakProxy.git", 
+    :git => "https://github.com/tetherpad/TPWeakProxy.git", 
     :tag => "1.0.0"
   }
   s.source_files = 'TPWeakProxy.{h,m}'
