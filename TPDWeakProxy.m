@@ -1,19 +1,19 @@
 //
-//  TPWeakProxy.m
-//  TPWeakProxy
+//  TPDWeakProxy.m
+//  TPDWeakProxy
 //
-//  Copyright (c) 2013 Tetherpad, Inc. All rights reserved.
+//  Copyright © 2013 Tetherpad.
 //
 
-#import "TPWeakProxy.h"
+#import "TPDWeakProxy.h"
 
-@interface TPWeakProxy ()
+@interface TPDWeakProxy ()
 
-@property (weak, nonatomic) id theObject;
+@property (nonatomic, weak) id theObject;
 
 @end
 
-@implementation TPWeakProxy
+@implementation TPDWeakProxy
 
 - (id)initWithObject:(id)object {
     // No init method in superclass
