@@ -1,4 +1,6 @@
 language: objective-c
+xcode_project: TPDWeakProxy/TPDWeakProxy.xcodeproj
+xcode_scheme: TPDWeakProxy
 env:
   global:
     - LC_ALL="en_US.UTF-8"
