@@ -26,7 +26,9 @@
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-    return [self.theObject methodSignatureForSelector:aSelector];
+    // Keep a strong reference so we can safely send a message
+    id obj = self.theObject;
+    return [obj methodSignatureForSelector:aSelector];
 }
 
 @end
