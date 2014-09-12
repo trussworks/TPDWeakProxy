@@ -32,4 +32,8 @@
     XCTAssertEqualObjects([numberOne stringValue], [proxy stringValue]);
 }
 
+- (void)testProxyWorksWithNilObject {
+    id proxy = [[TPDWeakProxy alloc] initWithObject:nil];
+    XCTAssertNil([proxy copy]);
+}
 @end
