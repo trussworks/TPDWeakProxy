@@ -21,14 +21,20 @@
     return self;
 }
 
-- (void)forwardInvocation:(NSInvocation *)anInvocation {
-    NSLog(@"%s %@", __PRETTY_FUNCTION__, [anInvocation description]);
-    [anInvocation invokeWithTarget:self.theObject];
+// First, try to use the fast forwarding path. If theObject is nil
+// the Objective C runtime will fall back to the older, slow path. This
+// speeds up message forwarding performance a lot from tests; it's nearly
+// as fast as directly messaging the object. If we return nil (ie, theObject
+// has become dereferenced or was nil to begin with), the Objective C runtime
+// falls back to the slow forwarding path.
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+    return self.theObject;
 }
 
+// First step of the slow forwarding path is to figure out the method signature.
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     NSMethodSignature *methodSignature;
-    // Keep a strong reference so we can safely send a message
+    // Keep a strong reference so we can safely send messages
     id obj = self.theObject;
     if (obj) {
         methodSignature = [obj methodSignatureForSelector:aSelector];
@@ -39,6 +45,12 @@
         methodSignature = [NSMethodSignature signatureWithObjCTypes:[types UTF8String]];
     }
     return methodSignature;
+}
+
+// The runtime uses the method signature from above to create an NSInvocation and asks us to
+// forward it along as we see fit.
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    [anInvocation invokeWithTarget:self.theObject];
 }
 
 @end

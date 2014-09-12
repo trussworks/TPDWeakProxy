@@ -98,6 +98,13 @@ Now, the NSTimer won't prevent the UIViewController from being
 dealloc'd when it's popped off the stack, and the dealloc() will now
 invalidate the timer correctly.
 
+# Thanks
+
+This
+[article](https://mikeash.com/pyblog/friday-qa-2009-03-27-objective-c-message-forwarding.html)
+by Mike Ash was invaluable for understanding the Objective C message
+forwarding path.
+
 ## License
 
 TPDWeakProxy is available under the MIT license. See the LICENSE file for more info.

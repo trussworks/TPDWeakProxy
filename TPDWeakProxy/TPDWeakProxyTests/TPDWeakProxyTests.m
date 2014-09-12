@@ -16,6 +16,10 @@
 
 @implementation TPDWeakProxyTests
 
+// Object messaging is fast enough that we have to message many times in order to see a difference in performance
+// from the proxy.
+const int iterations = 100000;
+
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -36,4 +40,27 @@
     id proxy = [[TPDWeakProxy alloc] initWithObject:nil];
     XCTAssertNil([proxy copy]);
 }
+
+// This "test" is simply to give us a reference for the proxy's performance
+- (void)testMessagePerformance {
+    NSNumber *numberOne = [[NSNumber alloc] initWithInteger:1];
+    [self measureBlock:^{
+        for (int i = 0; i < iterations; i += 1) {
+            [numberOne stringValue];
+        }
+    }];
+}
+
+// If you comment out forwardingTargetForSelector: in TPDWeakProxy.m, you can
+// see how much faster the fast path is than the slow path.
+- (void)testMessageProxyPerformance {
+    NSNumber *numberOne = [[NSNumber alloc] initWithInteger:1];
+    id proxy = [[TPDWeakProxy alloc] initWithObject:numberOne];
+    [self measureBlock:^{
+        for (int i = 0; i < iterations; i += 1) {
+            [proxy stringValue];
+        }
+    }];
+}
+
 @end
