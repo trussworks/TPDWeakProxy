@@ -1,7 +1,6 @@
 language: objective-c
 xcode_project: TPDWeakProxy/TPDWeakProxy.xcodeproj
 xcode_scheme: TPDWeakProxy
-xcode_sdk: iphonesimulator7.1 # For now; this should moved to 8.0
 env:
   global:
     - LC_ALL="en_US.UTF-8"
