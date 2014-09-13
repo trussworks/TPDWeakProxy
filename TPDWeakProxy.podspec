@@ -12,11 +12,11 @@ The primary use case is to break reference cycles.
   s.authors      = { "Mark Ferlatte" => "mark@tetherpad.com", "Jen Leech" => "jen@tetherpad.com" }
   s.source       = { 
     :git => "https://github.com/tetherpad/TPDWeakProxy.git", 
-    :tag => "1.0.0"
+    :tag => s.version.to_s
   }
   s.source_files = 'TPDWeakProxy.{h,m}'
   s.requires_arc = true
 
-  s.ios.deployment_target = '6.0'
-  s.osx.deployment_target = '10.7'
+  s.ios.deployment_target = '7.0'
+  s.osx.deployment_target = '10.9'
 end
