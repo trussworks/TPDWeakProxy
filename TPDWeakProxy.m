@@ -15,7 +15,7 @@
 
 @implementation TPDWeakProxy
 
-- (id)initWithObject:(id)object {
+- (instancetype)initWithObject:(id)object {
     // No init method in superclass
     self.theObject = object;
     return self;
@@ -35,9 +35,9 @@
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     NSMethodSignature *methodSignature;
     // Keep a strong reference so we can safely send messages
-    id obj = self.theObject;
-    if (obj) {
-        methodSignature = [obj methodSignatureForSelector:aSelector];
+    id object = self.theObject;
+    if (object) {
+        methodSignature = [object methodSignatureForSelector:aSelector];
     } else {
         // If obj is nil, we need to synthesize a NSMethodSignature. Smallest signature
         // is (self, _cmd) according to the documention for NSMethodSignature.

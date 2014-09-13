@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Tetherpad. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <XCTest/XCTest.h>
+@import UIKit;
+@import XCTest;
+
 #import "TPDWeakProxy.h"
 
 @interface TPDWeakProxyTests : XCTestCase
@@ -31,7 +32,7 @@ const int iterations = 100000;
 }
 
 - (void)testProxyReturnsSameResult {
-    NSNumber *numberOne = [[NSNumber alloc] initWithInteger:1];
+    NSNumber *numberOne = @1;
     id proxy = [[TPDWeakProxy alloc] initWithObject:numberOne];
     XCTAssertEqualObjects([numberOne stringValue], [proxy stringValue]);
 }
@@ -43,7 +44,7 @@ const int iterations = 100000;
 
 // This "test" is simply to give us a reference for the proxy's performance
 - (void)testMessagePerformance {
-    NSNumber *numberOne = [[NSNumber alloc] initWithInteger:1];
+    NSNumber *numberOne = @1;
     [self measureBlock:^{
         for (int i = 0; i < iterations; i += 1) {
             [numberOne stringValue];
@@ -54,7 +55,7 @@ const int iterations = 100000;
 // If you comment out forwardingTargetForSelector: in TPDWeakProxy.m, you can
 // see how much faster the fast path is than the slow path.
 - (void)testMessageProxyPerformance {
-    NSNumber *numberOne = [[NSNumber alloc] initWithInteger:1];
+    NSNumber *numberOne = @1;
     id proxy = [[TPDWeakProxy alloc] initWithObject:numberOne];
     [self measureBlock:^{
         for (int i = 0; i < iterations; i += 1) {

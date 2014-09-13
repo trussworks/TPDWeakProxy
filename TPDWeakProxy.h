@@ -5,10 +5,10 @@
 //  Copyright © 2013 Tetherpad.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface TPDWeakProxy : NSProxy
 
-- (id)initWithObject:(id)object;
+- (instancetype)initWithObject:(id)object;
 
 @end
