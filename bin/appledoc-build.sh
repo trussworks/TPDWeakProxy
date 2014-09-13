@@ -1,8 +1,14 @@
-#! /bin/sh
+#! /usr/bin/env bash
 
 PATH=/bin:/usr/bin:/usr/local/bin
 
-appledoc \
+inpath()
+{
+    type $1 &> /dev/null
+}
+
+
+inpath appledoc && appledoc \
     --project-name "TPDWeakProxy" \
     --project-company "Tetherpad" \
     --company-id "com.tetherpad" \
