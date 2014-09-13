@@ -15,6 +15,7 @@
 		8666D10E19C133DF0099512B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8666D10C19C133DF0099512B /* LaunchScreen.xib */; };
 		8666D11A19C133DF0099512B /* TPDWeakProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8666D11919C133DF0099512B /* TPDWeakProxyTests.m */; };
 		86857B0819C4298900983FE8 /* TPDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86857B0719C4298900983FE8 /* TPDWeakProxy.m */; };
+		86CB3C3919C42DA2008EBAB8 /* appledoc-build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 86CB3C3819C42DA2008EBAB8 /* appledoc-build.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		8666D11919C133DF0099512B /* TPDWeakProxyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPDWeakProxyTests.m; sourceTree = "<group>"; };
 		86857B0619C4298900983FE8 /* TPDWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPDWeakProxy.h; sourceTree = "<group>"; };
 		86857B0719C4298900983FE8 /* TPDWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPDWeakProxy.m; sourceTree = "<group>"; };
+		86CB3C3819C42DA2008EBAB8 /* appledoc-build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "appledoc-build.sh"; path = "bin/appledoc-build.sh"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		8666D0FD19C133DF0099512B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				86CB3C3819C42DA2008EBAB8 /* appledoc-build.sh */,
 				8666D0FE19C133DF0099512B /* Info.plist */,
 				8666D0FF19C133DF0099512B /* main.m */,
 			);
@@ -134,6 +137,7 @@
 				8666D0F619C133DF0099512B /* Sources */,
 				8666D0F719C133DF0099512B /* Frameworks */,
 				8666D0F819C133DF0099512B /* Resources */,
+				86CB3C3719C42D82008EBAB8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -208,6 +212,7 @@
 				8666D10919C133DF0099512B /* Main.storyboard in Resources */,
 				8666D10E19C133DF0099512B /* LaunchScreen.xib in Resources */,
 				8666D10B19C133DF0099512B /* Images.xcassets in Resources */,
+				86CB3C3919C42DA2008EBAB8 /* appledoc-build.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +224,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86CB3C3719C42D82008EBAB8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/bin/appledoc-build.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8666D0F619C133DF0099512B /* Sources */ = {

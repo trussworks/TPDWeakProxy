@@ -1,5 +1,7 @@
 #! /bin/sh
 
+PATH=/bin:/usr/bin:/usr/local/bin
+
 appledoc \
     --project-name "TPDWeakProxy" \
     --project-company "Tetherpad" \
@@ -13,4 +15,4 @@ appledoc \
     --no-warn-invalid-crossref \
     --ignore "*.m" \
     --index-desc "README.md" \
-    TPDWeakProxy.h
+    TPDWeakProxy/TPDWeakProxy.h
