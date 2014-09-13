@@ -98,7 +98,7 @@ Now, the NSTimer won't prevent the UIViewController from being
 dealloc'd when it's popped off the stack, and the dealloc() will now
 invalidate the timer correctly.
 
-# Thanks
+## Thanks
 
 This
 [article](https://mikeash.com/pyblog/friday-qa-2009-03-27-objective-c-message-forwarding.html)
