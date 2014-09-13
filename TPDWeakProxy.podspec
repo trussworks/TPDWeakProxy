@@ -9,12 +9,15 @@ The primary use case is to break reference cycles.
                    DESC
   s.homepage     = "https://github.com/tetherpad/TPDWeakProxy"
   s.license      = 'MIT'
-  s.authors      = { "Mark Ferlatte" => "mark@tetherpad.com", "Jen Leech" => "jen@tetherpad.com" }
+  s.authors      = {
+    "Mark Ferlatte" => "mark@tetherpad.com",
+    "Jen Leech" => "jen@tetherpad.com"
+  }
   s.source       = { 
     :git => "https://github.com/tetherpad/TPDWeakProxy.git", 
     :tag => s.version.to_s
   }
-  s.source_files = 'TPDWeakProxy.{h,m}'
+  s.source_files = 'TPDWeakProxy/TPDWeakProxy.{h,m}'
   s.requires_arc = true
 
   s.ios.deployment_target = '7.0'

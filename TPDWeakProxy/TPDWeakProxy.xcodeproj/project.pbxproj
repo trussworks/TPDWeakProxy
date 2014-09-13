@@ -6,477 +6,62 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		8666D10019C133DF0099512B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8666D0FF19C133DF0099512B /* main.m */; };
-		8666D10319C133DF0099512B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8666D10219C133DF0099512B /* AppDelegate.m */; };
-		8666D10619C133DF0099512B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8666D10519C133DF0099512B /* ViewController.m */; };
-		8666D10919C133DF0099512B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8666D10719C133DF0099512B /* Main.storyboard */; };
-		8666D10B19C133DF0099512B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8666D10A19C133DF0099512B /* Images.xcassets */; };
-		8666D10E19C133DF0099512B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8666D10C19C133DF0099512B /* LaunchScreen.xib */; };
-		8666D11A19C133DF0099512B /* TPDWeakProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8666D11919C133DF0099512B /* TPDWeakProxyTests.m */; };
-		8666D12519C135030099512B /* TPDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8666D12419C135030099512B /* TPDWeakProxy.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8666D11419C133DF0099512B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8666D0F219C133DF0099512B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8666D0F919C133DF0099512B;
-			remoteInfo = TPDWeakProxy;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		8666D0FA19C133DF0099512B /* TPDWeakProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDWeakProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8666D0FE19C133DF0099512B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8666D0FF19C133DF0099512B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8666D10119C133DF0099512B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8666D10219C133DF0099512B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8666D10419C133DF0099512B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8666D10519C133DF0099512B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8666D10819C133DF0099512B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8666D10A19C133DF0099512B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8666D10D19C133DF0099512B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8666D11319C133DF0099512B /* TPDWeakProxyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPDWeakProxyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8666D11819C133DF0099512B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8666D11919C133DF0099512B /* TPDWeakProxyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPDWeakProxyTests.m; sourceTree = "<group>"; };
-		8666D12319C135030099512B /* TPDWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPDWeakProxy.h; path = ../../TPDWeakProxy.h; sourceTree = "<group>"; };
-		8666D12419C135030099512B /* TPDWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPDWeakProxy.m; path = ../../TPDWeakProxy.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		8666D0F719C133DF0099512B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8666D11019C133DF0099512B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
-		8666D0F119C133DF0099512B = {
+		868224FD19C1334300F9F78E = {
 			isa = PBXGroup;
 			children = (
-				8666D0FC19C133DF0099512B /* TPDWeakProxy */,
-				8666D11619C133DF0099512B /* TPDWeakProxyTests */,
-				8666D0FB19C133DF0099512B /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		8666D0FB19C133DF0099512B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8666D0FA19C133DF0099512B /* TPDWeakProxy.app */,
-				8666D11319C133DF0099512B /* TPDWeakProxyTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8666D0FC19C133DF0099512B /* TPDWeakProxy */ = {
-			isa = PBXGroup;
-			children = (
-				8666D12319C135030099512B /* TPDWeakProxy.h */,
-				8666D12419C135030099512B /* TPDWeakProxy.m */,
-				8666D10119C133DF0099512B /* AppDelegate.h */,
-				8666D10219C133DF0099512B /* AppDelegate.m */,
-				8666D10419C133DF0099512B /* ViewController.h */,
-				8666D10519C133DF0099512B /* ViewController.m */,
-				8666D10719C133DF0099512B /* Main.storyboard */,
-				8666D10A19C133DF0099512B /* Images.xcassets */,
-				8666D10C19C133DF0099512B /* LaunchScreen.xib */,
-				8666D0FD19C133DF0099512B /* Supporting Files */,
-			);
-			path = TPDWeakProxy;
-			sourceTree = "<group>";
-		};
-		8666D0FD19C133DF0099512B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8666D0FE19C133DF0099512B /* Info.plist */,
-				8666D0FF19C133DF0099512B /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8666D11619C133DF0099512B /* TPDWeakProxyTests */ = {
-			isa = PBXGroup;
-			children = (
-				8666D11919C133DF0099512B /* TPDWeakProxyTests.m */,
-				8666D11719C133DF0099512B /* Supporting Files */,
-			);
-			path = TPDWeakProxyTests;
-			sourceTree = "<group>";
-		};
-		8666D11719C133DF0099512B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8666D11819C133DF0099512B /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		8666D0F919C133DF0099512B /* TPDWeakProxy */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8666D11D19C133DF0099512B /* Build configuration list for PBXNativeTarget "TPDWeakProxy" */;
-			buildPhases = (
-				8666D0F619C133DF0099512B /* Sources */,
-				8666D0F719C133DF0099512B /* Frameworks */,
-				8666D0F819C133DF0099512B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TPDWeakProxy;
-			productName = TPDWeakProxy;
-			productReference = 8666D0FA19C133DF0099512B /* TPDWeakProxy.app */;
-			productType = "com.apple.product-type.application";
-		};
-		8666D11219C133DF0099512B /* TPDWeakProxyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8666D12019C133DF0099512B /* Build configuration list for PBXNativeTarget "TPDWeakProxyTests" */;
-			buildPhases = (
-				8666D10F19C133DF0099512B /* Sources */,
-				8666D11019C133DF0099512B /* Frameworks */,
-				8666D11119C133DF0099512B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8666D11519C133DF0099512B /* PBXTargetDependency */,
-			);
-			name = TPDWeakProxyTests;
-			productName = TPDWeakProxyTests;
-			productReference = 8666D11319C133DF0099512B /* TPDWeakProxyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
 /* Begin PBXProject section */
-		8666D0F219C133DF0099512B /* Project object */ = {
+		868224FE19C1334300F9F78E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = TPD;
 				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = Tetherpad;
-				TargetAttributes = {
-					8666D0F919C133DF0099512B = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					8666D11219C133DF0099512B = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 8666D0F919C133DF0099512B;
-					};
-				};
 			};
-			buildConfigurationList = 8666D0F519C133DF0099512B /* Build configuration list for PBXProject "TPDWeakProxy" */;
+			buildConfigurationList = 8682250119C1334300F9F78E /* Build configuration list for PBXProject "TPDWeakProxy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 8666D0F119C133DF0099512B;
-			productRefGroup = 8666D0FB19C133DF0099512B /* Products */;
+			mainGroup = 868224FD19C1334300F9F78E;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8666D0F919C133DF0099512B /* TPDWeakProxy */,
-				8666D11219C133DF0099512B /* TPDWeakProxyTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		8666D0F819C133DF0099512B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8666D10919C133DF0099512B /* Main.storyboard in Resources */,
-				8666D10E19C133DF0099512B /* LaunchScreen.xib in Resources */,
-				8666D10B19C133DF0099512B /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8666D11119C133DF0099512B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		8666D0F619C133DF0099512B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8666D10619C133DF0099512B /* ViewController.m in Sources */,
-				8666D10319C133DF0099512B /* AppDelegate.m in Sources */,
-				8666D10019C133DF0099512B /* main.m in Sources */,
-				8666D12519C135030099512B /* TPDWeakProxy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8666D10F19C133DF0099512B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8666D11A19C133DF0099512B /* TPDWeakProxyTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8666D11519C133DF0099512B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8666D0F919C133DF0099512B /* TPDWeakProxy */;
-			targetProxy = 8666D11419C133DF0099512B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8666D10719C133DF0099512B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8666D10819C133DF0099512B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8666D10C19C133DF0099512B /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8666D10D19C133DF0099512B /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		8666D11B19C133DF0099512B /* Debug */ = {
+		8682250219C1334300F9F78E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
-				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_ASSIGN_ENUM = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
-				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
-				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8666D11C19C133DF0099512B /* Release */ = {
+		8682250319C1334300F9F78E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
-				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_ASSIGN_ENUM = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
-				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
-				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8666D11E19C133DF0099512B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TPDWeakProxy/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		8666D11F19C133DF0099512B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TPDWeakProxy/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		8666D12119C133DF0099512B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TPDWeakProxyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TPDWeakProxy.app/TPDWeakProxy";
-			};
-			name = Debug;
-		};
-		8666D12219C133DF0099512B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TPDWeakProxyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TPDWeakProxy.app/TPDWeakProxy";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8666D0F519C133DF0099512B /* Build configuration list for PBXProject "TPDWeakProxy" */ = {
+		8682250119C1334300F9F78E /* Build configuration list for PBXProject "TPDWeakProxy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8666D11B19C133DF0099512B /* Debug */,
-				8666D11C19C133DF0099512B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8666D11D19C133DF0099512B /* Build configuration list for PBXNativeTarget "TPDWeakProxy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8666D11E19C133DF0099512B /* Debug */,
-				8666D11F19C133DF0099512B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8666D12019C133DF0099512B /* Build configuration list for PBXNativeTarget "TPDWeakProxyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8666D12119C133DF0099512B /* Debug */,
-				8666D12219C133DF0099512B /* Release */,
+				8682250219C1334300F9F78E /* Debug */,
+				8682250319C1334300F9F78E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8666D0F219C133DF0099512B /* Project object */;
+	rootObject = 868224FE19C1334300F9F78E /* Project object */;
 }
