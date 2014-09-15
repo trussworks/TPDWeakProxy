@@ -13,7 +13,8 @@ An NSProxy object for turning strong references into weak references.
     // except that self will have a weak reference to it where you use the proxy.
     
     // As an example, NSTimer maintains a strong reference to its target. Sometimes
-    // this isn't what you want.
+    // this isn't what you want. This is also handy for dealing with
+    // classes that have strong delegate properties.
 
     NSTimer *myWeakRefTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                                target:proxy
@@ -23,7 +24,7 @@ An NSProxy object for turning strong references into weak references.
                                                               
 ## Installation
 
-Easiest way: use Cocoapods. Otherwise, copy the .h and .m into your project.
+Easiest way: use Cocoapods. Otherwise, copy TPMWeakProxy.{h,m} into your project.
 
     $ edit Podfile
     platform :ios, '7.0'
