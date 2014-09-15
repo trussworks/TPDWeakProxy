@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = "TPDWeakProxy"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "An NSProxy for converting strong references into weak ones."
   s.description  = <<-DESC
 TPDWeakProxy holds a weak reference to the object it proxies for.
 
 The primary use case is to break reference cycles.
-                   DESC
+DESC
   s.homepage     = "https://github.com/tetherpad/TPDWeakProxy"
   s.license      = 'MIT'
   s.authors      = {

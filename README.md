@@ -26,8 +26,8 @@ An NSProxy object for turning strong references into weak references.
 Easiest way: use Cocoapods. Otherwise, copy the .h and .m into your project.
 
     $ edit Podfile
-    platform :ios, '6.1'
-    pod 'TPDWeakProxy', '~> 1.0.0'
+    platform :ios, '7.0'
+    pod 'TPDWeakProxy', '~> 1.1.0'
     
     $ pod install
     
