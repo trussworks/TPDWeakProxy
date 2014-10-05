@@ -353,11 +353,13 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = (
-					"-Wall",
-					"-Wextra",
+					"-Weverything",
 					"-Wno-unused-parameter",
-					"-Wauto-import",
-					"-Wmissing-variable-declarations",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-documentation-unknown-command",
+					"-Wno-gnu-statement-expression",
+					"-Wno-incomplete-module",
+					"-Wno-auto-import",
 				);
 			};
 			name = Debug;
@@ -418,11 +420,13 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WARNING_CFLAGS = (
-					"-Wall",
-					"-Wextra",
+					"-Weverything",
 					"-Wno-unused-parameter",
-					"-Wauto-import",
-					"-Wmissing-variable-declarations",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-documentation-unknown-command",
+					"-Wno-gnu-statement-expression",
+					"-Wno-incomplete-module",
+					"-Wno-auto-import",
 				);
 			};
 			name = Release;
