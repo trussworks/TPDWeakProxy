@@ -19,7 +19,7 @@
 
 // Object messaging is fast enough that we have to message many times in order to see a difference in performance
 // from the proxy.
-const int iterations = 100000;
+static const int iterations = 100000;
 
 - (void)setUp {
     [super setUp];
@@ -34,12 +34,15 @@ const int iterations = 100000;
 - (void)testProxyReturnsSameResult {
     NSNumber *numberOne = @1;
     id proxy = [[TPDWeakProxy alloc] initWithObject:numberOne];
-    XCTAssertEqualObjects([numberOne stringValue], [proxy stringValue]);
+    XCTAssertEqualObjects([numberOne stringValue],
+                          [proxy stringValue],
+                          @"proxy MUST return same result as object");
 }
 
 - (void)testProxyWorksWithNilObject {
     id proxy = [[TPDWeakProxy alloc] initWithObject:nil];
-    XCTAssertNil([proxy copy]);
+    XCTAssertNil([proxy copy],
+                 @"proxy MUST work with a nil object");
 }
 
 // This "test" is simply to give us a reference for the proxy's performance
