@@ -2,6 +2,9 @@
 
 An NSProxy object for turning strong references into weak references.
 
+## Build Status
+[![Build Status](https://travis-ci.org/tetherpad/TPDWeakProxy.svg?branch=master)](https://travis-ci.org/tetherpad/TPDWeakProxy)
+
 ## Usage
 
     // Create a weak proxy to the object which you would like to be weakly referenced.
