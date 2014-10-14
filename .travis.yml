@@ -5,3 +5,4 @@ xcode_sdk: iphonesimulator8.0
 env:
   global:
     - LC_ALL="en_US.UTF-8"
+before_script: "./bin/travis-before.sh"
