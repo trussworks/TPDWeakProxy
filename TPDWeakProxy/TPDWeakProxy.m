@@ -41,8 +41,15 @@
     } else {
         // If obj is nil, we need to synthesize a NSMethodSignature. Smallest signature
         // is (self, _cmd) according to the documention for NSMethodSignature.
-        NSString *types = [NSString stringWithFormat:@"%s%s", @encode(id), @encode(SEL)];
-        methodSignature = [NSMethodSignature signatureWithObjCTypes:[types UTF8String]];
+        NSString *idSignature = [NSString stringWithUTF8String:@encode(id)];
+        NSString *selSignature = [NSString stringWithUTF8String:@encode(SEL)];
+        NSString *types = [NSString stringWithFormat:@"%@%@", idSignature, selSignature];
+        const char *objCTypes = [types UTF8String];
+        if (objCTypes) {
+            methodSignature = [NSMethodSignature signatureWithObjCTypes:objCTypes];
+        } else {
+            return nil;
+        }
     }
     return methodSignature;
 }
