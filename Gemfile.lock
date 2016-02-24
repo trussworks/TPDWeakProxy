@@ -97,6 +97,3 @@ PLATFORMS
 DEPENDENCIES
   cocoapods
   travis
-
-BUNDLED WITH
-   1.11.2
