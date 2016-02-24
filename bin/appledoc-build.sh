@@ -1,6 +1,6 @@
 #! /bin/bash
 
-set -eux -o pipefail
+set -eu -o pipefail
 
 PATH=/bin:/usr/bin:/usr/local/bin
 
