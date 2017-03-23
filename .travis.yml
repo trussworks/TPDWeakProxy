@@ -1,8 +1,0 @@
-language: objective-c
-xcode_project: TPDWeakProxy.xcodeproj
-xcode_scheme: TPDWeakProxy
-xcode_sdk: iphonesimulator9.2
-osx_image: xcode7.2
-env:
-  global:
-    - LC_ALL="en_US.UTF-8"
