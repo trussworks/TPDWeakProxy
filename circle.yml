@@ -1,6 +1,0 @@
-machine:
-  xcode:
-    version: 8.2
-dependencies:
-  pre:
-    - xcrun instruments -w "iPhone 7 (10.2) [" || true

@@ -3,7 +3,7 @@
 //  TPDWeakProxyTests
 //
 //  Created by Mark Ferlatte on 9/10/14.
-//  Copyright (c) 2014 Tetherpad. All rights reserved.
+//  Copyright © 2013-2018 TrussWorks.
 //
 
 @import UIKit;
