@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: bundle install
-          command: bundle install
+          command: sudo bundle install
       - run:
           name: Build and run tests
           command: bundle exec fastlane scan
