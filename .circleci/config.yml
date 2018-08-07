@@ -8,6 +8,10 @@ jobs:
     steps:
       - checkout
       - run:
+          # For some reason, bundle install fails when install the dotenv
+          # gem with a permissions issue in tmp. This does not happen
+          # if you ssh into the build and run bundle install manually.
+          # sudo hacks around the problem for now.
           name: bundle install
           command: sudo bundle install
       - run:
